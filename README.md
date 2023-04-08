@@ -1,18 +1,24 @@
 ## free_blog 碎言静态博客主题
 
 ### 介绍
+大道至简，返璞归之，这是一款侧重与内容的博客主题
 本项目为[碎言静态博客](https://github.com/bosichong/suiyan.git)主题。
+主题支持亮色和黑暗主题在线切换。
 
 [碎言静态博客Gitee](https://gitee.com/J_Sky/suiyan)
 [碎言静态博客GitHub](https://github.com/bosichong/suiyan.git)
 
+### 效果展示
 
+![](doc/001.png)
+
+![](doc/002.png)
 
 ### 技术框架
 
 主题模板采用了jinja2的模板引擎，使用了pico.css样式制作。
 图标：[FontAwesome 4.7.0 中完整的675个图标样式CSS参考](https://9iphp.com/fa-icons)
-
+响应式适配移动端。
 
 
 ### 安装教程
