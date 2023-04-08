@@ -1,0 +1,44 @@
+<div class="left">
+    <hgroup class="hd">
+        <img class="avatar" src="{{ site_url }}{{ profile_image }}"/>
+        <div>{{ blog_description_en }}</div>
+        <ul class="sns-ul">
+            {% for sns in blog_sns %}
+            <li class="sns-li">
+                <a href="{{ sns.url }}" target="_blank">
+                    <i class="fa fa-{{ sns.ico }} "></i>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </hgroup>
+
+    <!-- Search -->
+    <input type="text" id="search-input" name="search" placeholder="JavaScript">
+    <button id="search-btn" class="contrast"
+            data-target="modal-example"
+            onClick="toggleModal(event)">Search
+    </button>
+
+
+    <!-- Modal -->
+    <dialog id="modal-example">
+        <article>
+            <a href="#close"
+               aria-label="Close"
+               class="close"
+               data-target="modal-example"
+               onClick="toggleModal(event)">
+            </a>
+            <h3>搜索结果</h3>
+            <div id="modal" style="display: none;">
+                <ul id="result-list"></ul>
+            </div>
+        </article>
+    </dialog>
+    <script src="{{ site_url }}assets/js/url.js"></script>
+    <script src="{{ site_url }}assets/js/main.js"></script>
+    <script src="{{ site_url }}assets/js/modal.js"></script>
+
+
+    </div>

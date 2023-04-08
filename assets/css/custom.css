@@ -1,0 +1,117 @@
+/* Global CSS variables */
+:root {
+  --spacing-company: 3rem;
+  --font-weight: 200;
+  --border-radius: 0;
+}
+
+/* Typography */
+h2,
+h3,
+hgroup > :last-child {
+  font-weight: 200;
+}
+
+small {
+  color: var(--muted-color);
+}
+
+/* Header */
+.hero {
+  background-color: #394046;
+  background-position: center;
+  background-size: cover;
+}
+
+header {
+  padding: var(--spacing-company) 0;
+}
+
+header hgroup > :last-child {
+  color: var(--h3-color);
+}
+
+header hgroup {
+  margin-bottom: var(--spacing-company);
+}
+
+/* Nav */
+summary[role="link"].contrast:is([aria-current],:hover,:active,:focus) {
+  background-color: transparent;
+  color: var(--contrast-hover);
+}
+
+
+form.grid {
+  grid-row-gap: 0;
+}
+
+
+aside p {
+  margin-bottom: var(--spacing-company);
+  line-height: 1.25;
+}
+
+section {
+  margin-bottom: 0;
+}
+
+
+/* sns */
+.sns-ul{
+  padding: 0;
+}
+.sns-li {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.blog-li{
+  display: block;
+}
+
+.avatar{
+  width: 140px;
+  height: 140px;
+  border-radius: 50%
+}
+
+footer,.hd {
+  text-align: center;
+}
+
+.left{
+  text-align: center;
+  top: auto;
+  margin: 3em auto;
+}
+
+.blog-nav, #result-list{
+  text-align: left;
+}
+
+.nav-li {
+  display: contents;
+}
+
+@media (min-width: 48em) {
+  .content {
+      padding: 2em 3em 0;
+      margin-left: 25%;
+  }
+
+  .left {
+      margin: 60% 2em 0;
+  }
+
+  .sidebar {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+  }
+
+  .footer {
+      text-align: center;
+  }
+}
+
