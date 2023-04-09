@@ -94,6 +94,10 @@ footer,.hd {
   display: contents;
 }
 
+.suiyan_main{
+    padding:1em;
+}
+
 @media (min-width: 48em) {
   .content {
       padding: 2em 3em 0;

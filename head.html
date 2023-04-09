@@ -1,7 +1,23 @@
 <div class="left">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <hgroup class="hd">
         <img class="avatar" src="{{ site_url }}{{ profile_image }}"/>
-        <div>{{ blog_description_en }}</div>
+        <div><span id="typed"></span></div>
+
+        <script>
+        const typed = new Typed('#typed', {
+          strings: [
+          {% for t in blog_typed %}
+          '{{ t }}',
+          {% endfor %}
+          ],
+          typeSpeed: 100,
+          backSpeed: 10,
+          backDelay: 100,
+          startDelay: 1000,
+          loop:true
+    });
+  </script>
         <ul class="sns-ul">
             {% for sns in blog_sns %}
             <li class="sns-li">
